@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}<title id="htmlTitle">JWT DEMO</title>{% endblock %}
+{% block link %}<link id="css" rel="stylesheet" type="text/css" href="/static/css/index.css">{% endblock %}
+{% block content %}<div id="bannerTitle">JWT LOGIN</div>{% endblock %}
+{% block main %}
+<main id="indexMain">
+    <div>
+        <div>Secret Password</div>
+        <div>
+            <input id="passwordInput" type="text" name="password" placeholder="輸入錯誤會通往地獄"/>
+            <button id="loginButton">確定進入</button>
+        </div>
+    </div>
+</main>
+{% endblock %} 
+{% block script %}
+<script id="script" type="module" src="/static/js/main.js"></script>
+{% endblock %}
+
+{% block footer %}
+<footer>
+    <audio id="playAudio" src="/static/music/The Last Battle.mp3" controls="controls" loop="true" hidden="true"></audio>
+</footer>
+{% endblock %}
+
+

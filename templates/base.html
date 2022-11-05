@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}{% endblock %}
+    {% block link %}{% endblock %}
+    <link rel="shortcut icon" href="/static/pic/flask.png" />
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+</head>
+<body>
+    <nav>
+        <div>
+            {% block content %}{% endblock %}
+        </div>
+    </nav>
+
+    {% block main %}{% endblock %}
+    {% block script %}{% endblock %}
+    {% block footer %}{% endblock %}
+    <div id="url">{{request_path}}</div>
+</body>
+</html>
